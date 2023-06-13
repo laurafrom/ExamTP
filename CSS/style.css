@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Nunito:wght@300..1000&display=swap');
+/*insert fonts here at the first*/
+
+body {
+    margin: 0;
+    font-family: 'Nunito', sans-serif;}
+
+header {
+    background-color: lightskyblue;
+    height: 75.90vh; }
+
+footer {height: 15vh; background-color: lightskyblue;}
+
+main > .container-fluid:first-child {height: 40vh;}
+
+main > .container-fluid:nth-child(2) {height: 70vh;}
+
+main > .container-fluid:nth-child(3) {height: 70vh;}
+
+header, main {padding: 0 8.33vw !important;}
+
+.navbar {background-color: white;}
+
+.form-control.is-valid, .was-validated .form-control:valid {
+    border-color: purple;
+    background-image: url(../images/check.png);
+    }
+
+textarea { resize: none;}
+
+.modal-title {
+    padding: 0 10px  !important;}
+
+main > .container-fluid { height: 20vh;}
+
+header>div, main  .container-fluid > div, .carousel-inner, 
+.carousel-item {
+    height: 100%;
+}
+
+.carousel-inner .carousel-item img  { 
+    height: 100%;
+    object-fit: cover;
+    }
+
+h1, h2 {font-family: 'Abril Fatface', cursive;}
+
+h1, h2, h3 {margin-top: 0;}
+
+h1 {
+    font-size: 40px;
+    vertical-align: top;
+}
+
+h1, h3, header p {
+    line-height: 125%;
+}
+
+header p {
+    font-size: 16px;
+}
+
+h3 {
+    font-size: 20px;
+    letter-spacing: 5px;
+}
+
+header a {
+    font-size: 20px;
+    width: 35%;
+    display: block;
+    padding: 11.5px 0;
+    border-radius: 5px;
+}
+
+header img, section:nth-child(3) img {border-radius: 5px;}
+
+.row {margin-right: 0px;}
+
+header a:hover {background-color: black !important;
+    color: white !important;
+    transition-property: background-color, color, transform;
+    transition-duration: 1000ms, 2s;}
+
+.nav-item:hover {text-decoration: underline !important;
+    text-decoration-color: darkgrey !important;
+    transition-property: text-decoration, text-decoration-color, transform;
+    transition-duration: 1000ms, 2s;}
+
+@media (max-width: 768px) {
+    header {
+        height: auto;
+        padding: 40px
+        }
+    main {
+        height: auto; 
+        padding: 40px; 
+        }
+    main > .container-fluid:nth-child(2) {padding: 20px;}
+    header > .row:first-child {padding: 20px;}
+    header > .col-md-5 {padding: 10px;}
+    }
+

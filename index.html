@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TP Travel Argentina</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <!--Bootstrap link-->
+    <link rel="stylesheet" href="css/style.css">
+    <!--my css link-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" 
+ integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+</head>
+<body>
+
+        <div class="modal fade" id="myModal" index="-1">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" >Contact Form</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+      
+                <form id="myForm" novalidate class="needs-validation" method="post" action="PHP/code.php"> 
+                  <div class="mb-3">
+                  <label for="userName" class="form-label"> Name </label>
+                  <input name="userName" id="userName" required class="form-control" type="text" pattern="[a-zA-Z]{2,40}" placeholder="FirstName LastName">
+                  <div class="invalid-feedback">
+                      You are missing your name
+                  </div>
+                  </div> <!--field for name-->
+      
+                  <label for="userEmail" class="form-label"> Email </label>
+                  <div class="mb-3">
+                  <input name="userEmail" placeholder="example.name@yourdomain.com" type="email" id="userEmail" class="form-control">
+                  <div class="invalid-feedback">
+                    Has to be a valid email
+                </div>
+                </div>
+      
+                  <label for="userComments" class="form-label"> Questions & Comments </label>
+                  <textarea name="userComments" required id="userComments" class="form-control"></textarea>
+      
+                  
+      
+                </form>
+                </div>
+                <div class="modal-footer">
+                  <button form="myForm" formmethod="post" formaction="PHP/code.php" class="btn btn-success"> Send Information</button>
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+        <!-- part for the form-->
+
+        <nav class="navbar navbar-expand-md ">
+            <div class="container-fluid">
+        
+              <a class="navbar-brand" href="index.html
+                  "> <img class="d-inline-block align-text-top" src="images/logo.svg" alt="Logo" width="30" height="24"> Travel Argentina</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#myNav">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="myNav">
+                <ul class="navbar-nav  ms-auto ">
+                  <li class="nav-item">
+                    <a class="nav-link active" href="#">Home</a>
+                  </li>
+        
+                  <li class="nav-item">
+                    <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#myModal">Contact</a>
+                  </li>
+        
+                  <li class="nav-item">
+                    <a class="nav-link" target="_blank" href="https://www.instagram.com/visitargentina/">Instagram</a>
+                  </li>
+        
+                </ul>
+              </div>
+            </div>
+          </nav>
+        <!-- part for the navigation bar at the top of the page -->
+    <header class="container-fluid text-white">
+        <div class="row justify-content-between align-items-center">
+            <div class="col-md-5 col-lg-5">
+              <h3 class="text-uppercase">welcome</h3>
+      
+              <h1>Buenos Aires - a city with many different faces </h1>
+              <p>Argentina is a lively city with influences from different parts of the world in its varying neighborhoods. From colorful La Boca to Palermo filled with restaurants and bars. Want to ask something? </p>
+      
+              <a class="text-dark text-decoration-none bg-white text-center"
+                href="mailto:travelinfo@argentina.com?subject=Travel%20In%20Argentina%20&body=How%20can%20I%20see%20what%20Argentina%20has%20to%20offer">Email us</a>
+      
+            </div>
+      
+            <div class="col-md-5 col-lg-5 pt-2">
+              <img src="images/image-1.jpg" class="w-100 img-fluid" alt="work team">
+      
+            </div>
+          </div>
+
+    </header>
+
+    <main class="container-fluid">
+        <section class="container-fluid">
+            <div class="row justify-content-center text-center align-items-center">
+                <div class="col-md-5">
+                    <h2>Argentina - more than the cities</h2>
+                    <p>Argentina has some of the most wonderful nature with varying landscapes from the north to the south</p>
+
+                    <a href="https://www.instagram.com/visitargentina/" target="_blank" class="btn btn-dark">Instagram</a>
+                </div>
+            </div>
+        </section> <!-- end of first section -->
+        
+        <section class="container-fluid">
+            <div class="container-fluid pt-2">
+                <div id="myCarousel" class="carousel slide  carousel-fade" data-bs-ride="carousel">
+                  <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2"></button>
+                    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="3"></button>
+        
+                  </div>
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+        
+                      <img src="images/foto-11.JPG" class="d-block w-100" alt="...">
+                      <div class="carousel-caption d-none d-md-block">
+                        <h5>Iguazu Falls</h5>
+                        <p>The great waterfalls on the border of Brazil are one of the natural wonders the country has to offer</p>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <img src="images/foto-12.JPG" class="d-block w-100" alt="...">
+                      <div class="carousel-caption d-none d-md-block">
+                        <h5>Patagonia</h5>
+                        <p>Landscapes in Patagonia include beautiful mountains and glaciers.</p>
+                      </div>
+                    </div>
+        
+        
+                    <div class="carousel-item" data-bs-interval="2000">
+                      <img src="images/foto-13.jpg" class="d-block w-100" alt="...">
+                      <div class="carousel-caption d-none d-md-block">
+                        <h5>North Argentina</h5>
+                        <p>The colorful mountains in the northern province of Jujuy</p>
+                      </div>
+                    </div>
+
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <img src="images/foto-14.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                          <h5>Mendoza</h5>
+                          <p>The biggest wine region in Argentina offers many possibilities for wine enthusiasts</p>
+                        </div>
+                      </div>
+        
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+        
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+        
+                  </button>
+                </div>
+        
+              </div>
+        </section> <!-- second section with carousel -->
+
+        <section class="container-fluid">
+            <div class="row justify-content-between align-items-center">
+            <div class="col-md-5 col-lg-5">
+                <img src="images/foto-1.jpg" class="w-100 img-fluid" alt="team">
+            </div>
+            <div class="col-md-5 col-lg-5">
+        
+                <h1>How to explore Argentina </h1>
+                <p> Argentina is a huge country and you need time to explore the different corners of the country. There is easy ways to travel by flight or by buses through the country. Argentina is great for backpackers as well as vacationers. Contact us to hear more.</p>
+        
+                <a href="#" data-bs-toggle="modal" data-bs-target="#myModal" class="btn btn-dark" > Contact </a>
+            </div>
+        </div>
+        </section> <!--last section of the page with contact-->
+
+    </main>
+
+    <footer class="row align-items-center text-white text-center">
+        <p>©All rights reserved.</p>
+    </footer>
+    
+    <script src="JS/form.js"></script>
+    
+</body>
+</html>
