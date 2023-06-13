@@ -15,7 +15,7 @@ main > .container-fluid:first-child {height: 40vh;}
 
 main > .container-fluid:nth-child(2) {height: 70vh;}
 
-main > .container-fluid:nth-child(3) {height: 70vh;}
+main > .container-fluid:nth-child(3) {height: 80vh;}
 
 header, main {padding: 0 8.33vw !important;}
 
@@ -98,6 +98,6 @@ header a:hover {background-color: black !important;
         }
     main > .container-fluid:nth-child(2) {padding: 20px;}
     header > .row:first-child {padding: 20px;}
-    header > .col-md-5 {padding: 10px;}
+    header > .col-md-5 {padding: 10px !important;}
     }
 
